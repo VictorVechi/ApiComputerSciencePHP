@@ -56,4 +56,6 @@ $paths = new Paths();
 // LOAD THE FRAMEWORK BOOTSTRAP FILE
 require $paths->systemDirectory . '/Boot.php';
 
+require_once '../vendor/autoload.php';
+
 exit(Boot::bootWeb($paths));
